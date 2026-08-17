@@ -97,6 +97,7 @@ async function preguntarClaude(mensajeCliente) {
 }
 
 app.get('/', (req, res) => res.send('Bot ASKÁN activo ✅'));
+app.get('/webhook', (req, res) => res.send('Webhook listo ✅'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Bot escuchando en puerto ${PORT}`));
